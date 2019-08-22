@@ -1,0 +1,79 @@
+{
+  "env": {
+     "browser": true,
+     "es6": true,
+     "jest": true
+  },
+  "extends": [
+      "react-app",
+      "airbnb",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+  ],
+  "globals": {
+     "Atomics": "readonly",
+     "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+     "ecmaFeatures": {
+        "jsx": true
+     },
+     "ecmaVersion": 2018,
+     "sourceType": "module"
+  },
+  "plugins": [
+     "react",
+     "import",
+     "jsx-a11y",
+     "@typescript-eslint",
+     "prettier"
+  ],
+  "rules": {
+     "no-console": "off",
+      "no-empty": "off",
+      "no-return-assign": "off",
+      "no-restricted-syntax": "off",
+      "no-alert" : "off",
+      "no-unused-expressions": "off",
+      "no-plusplus": "off",
+      "semi" : "off",
+      "radix": "off",
+      "max-len": "off",
+      "guard-for-in": "off",
+      "func-names": "off",
+      "react/jsx-filename-extension": [
+         "error",
+         {
+            "extensions": [
+               ".tsx"
+            ]
+         }
+      ],
+      "import/prefer-default-export": "off",
+      "import/no-extraneous-dependencies": "off",
+      "import/no-cycle": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/explicit-member-accessibility": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/interface-name-prefix": "off",
+      "@typescript-eslint/camelcase": "off",
+​
+      "react/no-array-index-key": "off"
+  },
+  "settings": {
+     "import/parsers": {
+        "@typescript-eslint/parser": [
+           ".ts",
+           ".tsx"
+        ]
+     },
+     "import/resolver": {
+        "typescript": {}
+     }
+  }
+}
